@@ -102,6 +102,21 @@ class MainActivity : AppCompatActivity() {
 			showBrushSizeChooserDialog()
 		}
 		
+		val undo  = findViewById<ImageButton>(R.id.id_undo)
+		
+		undo.setOnClickListener {
+		drawing?.setUndo()
+		}
+		
+		
+		val save  = findViewById<ImageButton>(R.id.id_save)
+		
+		save.setOnClickListener {
+		
+		}
+		
+		
+		
 	}
 	
 	private fun showRationaleDialog( title: String, message: String){

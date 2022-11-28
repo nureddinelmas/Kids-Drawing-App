@@ -17,7 +17,7 @@ class DrawingView (context: Context, attrs: AttributeSet) : View(context, attrs)
 	private var color = Color.BLACK // A variable to hold a color of the stroke
 	private var canvas: Canvas? = null
 	private val mPaths = ArrayList<CustomPath>()
-	
+	private val mUndoPaths = ArrayList<CustomPath>()
 	
 	init {
 		setUpDrawing()
@@ -110,6 +110,15 @@ class DrawingView (context: Context, attrs: AttributeSet) : View(context, attrs)
 		
 		mDrawPaint!!.color = color
 	}
+	
+	
+	fun setUndo(){
+	if(mPaths.size > 0){
+		mUndoPaths.add(mPaths.removeAt(mPaths.size-1))
+		invalidate()
+	}
+	}
+	
 	
 	internal inner class CustomPath(var color: Int, var brushThickness: Float ) : Path() {
 	

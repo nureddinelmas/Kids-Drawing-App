@@ -116,8 +116,7 @@ android:id="@+id/fl_drawing_view_container"
 
 </LinearLayout>
 
-
-    <LinearLayout
+      <LinearLayout
         android:id="@+id/ll_action_buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -134,8 +133,7 @@ android:id="@+id/fl_drawing_view_container"
             android:layout_height="50dp"
             android:layout_margin="5dp"
             android:src="@drawable/ic_photo_library"
-            android:scaleType="fitXY"
-            />
+            android:scaleType="fitXY" />
 
         <ImageButton
             android:id="@+id/id_brush"
@@ -143,8 +141,24 @@ android:id="@+id/fl_drawing_view_container"
             android:layout_height="50dp"
             android:layout_margin="5dp"
             android:src="@drawable/ic_brush"
-            android:scaleType="fitXY"
-           />
+            android:scaleType="fitXY" />
+
+
+        <ImageButton
+            android:id="@+id/id_undo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_backspace"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/id_save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_save"
+            android:scaleType="fitXY" />
     </LinearLayout>
 
 

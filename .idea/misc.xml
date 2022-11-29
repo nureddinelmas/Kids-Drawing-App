@@ -15,6 +15,8 @@
         <entry key="app/src/main/res/layout/custom_dialog.xml" value="0.2545289855072464" />
         <entry key="app/src/main/res/layout/custom_progress_bar_layout.xml" value="0.2545289855072464" />
         <entry key="app/src/main/res/layout/dialog_brush_size.xml" value="0.2246376811594203" />
+        <entry key="app/src/main/res/layout/dialog_custom_progress.xml" value="0.27943840579710144" />
+        <entry key="app/src/main/res/xml/path.xml" value="0.27943840579710144" />
       </map>
     </option>
   </component>
